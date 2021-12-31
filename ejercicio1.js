@@ -1,1 +1,2 @@
-constan var = "Hola Mundo";
+let var1 = "Hola Mundo";
+console.log(var1);
