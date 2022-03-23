@@ -1,4 +1,4 @@
-// const prompt = require("prompt-sync")({ sigint: true });
+const prompt = require("prompt-sync")({ sigint: true });
 
 
 // let arr1 = ["casa", "cab@llo", "perro"];
@@ -167,3 +167,78 @@ let edad = 21 //(el número es a modo de ejemplo, podés cambiarlo o
     // }
 
 
+const array1 = ["esteban@gmail.com", "vanesagmail.com", "sebastian@yahoo.es", "alejandrohotmail.com", "marcos@yupi.com", "pepito@gmail.com", "carlos@yahoo.com", "asldfgmail.com"]
+
+const newArray = [];
+
+const descartados = [];
+
+function prueba(array){
+for(let i=0; i<array1.length; i++){
+    /* console.log(array1[i]); */
+    for(let j=0; j<array1[i].length; j++){
+        console.log(array1[i][j])
+        if(array1[i][j] == "@"){
+           newArray.push(array1[i]) 
+            /* console.log(array1[i]) */
+        }
+        
+    }
+   
+    
+}
+console.log(newArray);
+}
+prueba(array1)
+
+
+for(let i=0; i<array1.length; i++){
+       /*  console.log(array1[i]); */
+        for(let j=0; j<array1[i].length; j++){
+            /* console.log(array1[i][j]); */
+            if(array1[i][j] == "@"){
+                
+               newArray.push(array1[i]) 
+                /* console.log(array1[i]) */
+            }
+            
+        }
+        
+
+    }
+    console.log(newArray);
+    console.log("------------------Ejercicio peliculas----------------");
+
+// const peliculas = ["star wars", "totoro", "rocky", "pulp fiction", "la vida es bella"];
+
+// function mayuscula(array){
+//     for(i=0; i<peliculas.length; i++){
+        
+//     }
+
+// }
+
+// console.log(peliculas[2].toUpperCase());
+
+let resultado = [];
+
+
+
+
+console.log("-------------CREAR UN OBJETO CON UN NÚMERO INGRESADO POR LA FUNCIÓN----------------------------")
+function arregloDeObjetos(num, stringElegido ){
+    
+
+for(let i=1; i<num; i++){
+    let objeto={
+        stringElegido:i
+    }
+    this.stringElegido = stringElegido;
+    console.log(stringElegido);
+    resultado.push(objeto);
+}
+return resultado;
+}
+
+arregloDeObjetos(10, "prueba")
+console.log(resultado);
