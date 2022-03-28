@@ -207,10 +207,15 @@ console.log(tipoDato(5));
 // 9. Crear una función que le pasamos el radio de un círculo y nos devuelve la circunferencia.Pista: Investigá si el objeto Math tiene entre sus propiedades el número Pi. FORMULA P=2πR
 
 
-const calcularPi = Math.PI
+/* const calcularPi = Math.PI
 
 let circunferencia = (radio = prompt("INGRESA EL RADIO: ")) => console.log(`la circunferencia o perimetro es: ${2*calcularPi*radio}`)
 
 
 console.log(circunferencia());
+ */
 
+let num1 = -7;
+let num2 = 8;
+
+console.log(4 == 3)
