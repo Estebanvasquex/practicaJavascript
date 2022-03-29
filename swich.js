@@ -48,11 +48,72 @@ para el sándwich base, uno para el pan y los seis booleanos de los adicionales�
 función deberá consultar primero qué tipo de sándwich base se seleccionó, luego el tipo de pan, y por último deberá verificar qué adicionales se seleccionaron.
 Finalmente, deberá retornar el valor numérico del total a pagar del cliente. */
 
+/* tipo de sándwich base */
 
-let pollo = 150;
+/* let pollo = 150;
 let carne = 200;
-let vegetariano = 100;
+let vegetariano = 100; */
+
+let base = "";
+
+/* tipo de pan deseado: */
+
+/* let panBlanco = 50;  */  /* Blanco c/orégano y parmesano debe ingresar string "blaco"*/
+/* let negro = 60;  *//* Negro c/avena debe ingresar el string “negro” */
+/* let sinGluten= 75; */ /*  Sin gluten debe ingresar el string “s/gluten” */
+
+let tipoPan="";
+
+/* adicionales: */
+/* 
+let queso = 20;
+let tomate = 15;
+let lechuga = 10;
+let cebolla = 15;
+let mayonesa = 5;
+let mostaza = 5; */
+
+
+let totalPedido = 0;
+
+/* console.log("total pedidos antes del for" + totalPedido) */
 
 console.log("BIENVENIDO A SU RESTAURANTE SÁNDWICH EL PROGRAMADOR")
 
-let tipoSandwich = prompt("POR FAVOR E");
+
+for(i=0; i<=3; i++){
+    if(i=0){
+
+        base = prompt("Favor escriba pollo - carne - vegetariano: ");
+        
+        console.log(totalPedido);
+
+        switch (base) {
+            case "pollo":
+                    totalPedido=totalPedido
+    
+            case "carne":
+                    totalPedido=totalPedido+200    
+            
+            case "vegetariano": 
+                    totalPedido=totalPedido+100  
+                     
+                    
+        console.log(totalPedido)
+        }
+}
+
+console.log(totalPedido);
+
+
+/* 
+switch (key) {
+    case value:
+        
+        break;
+
+    default:
+        break;
+}
+
+let tipoSandwich = prompt("POR FAVOR ELIJA ENTRE LAS SIGUIENTES OPCIONES PARA LA BÁSE DE SÁNDWICH: pollo --- carne --- veggie"); */
