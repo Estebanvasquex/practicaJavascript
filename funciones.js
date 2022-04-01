@@ -215,7 +215,39 @@ let circunferencia = (radio = prompt("INGRESA EL RADIO: ")) => console.log(`la c
 console.log(circunferencia());
  */
 
-let num1 = -7;
-let num2 = 8;
+// let num1 = -7;
+// let num2 = 8;
 
-console.log(4 == 3)
+// console.log(4 == 3)
+
+// Buscar el mayor número
+
+function mayor(a,b,c,d){
+    return Math.max(a,b,c,d)
+}
+
+let mayorNumero = mayor(20,34,67,44);
+
+console.log(mayorNumero)
+
+// Buscar el mayor número de un array
+
+const array3=[2,1,86,5,3,9];
+
+function buscarMayorEnArray(array2){
+    
+    let mayor = 0;
+    for(i=0; i<=array2.length; i++){
+
+        console.log(array2[i+1])
+
+        // if(array2[i] > array2[i+1]){
+        //     mayor = array2[i]
+        // }
+
+    }
+    return mayor
+}
+
+
+console.log(buscarMayorEnArray(array3))

@@ -92,10 +92,3 @@ console.log(posicionRojo);
 console.log(array1);
 
 
-let prueba = function numeros(){
-for(i=0; i<10; i++) {
-    console.log(`"número: ${i}"`)
-}
-}
-
-console.log(prueba);

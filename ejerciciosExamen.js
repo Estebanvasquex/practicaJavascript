@@ -100,3 +100,5 @@ function split(palabra){
 }
 
 split("hola");
+
+/* PENDIENTE POR TERMINAR */

@@ -104,16 +104,3 @@ for(i=0; i<=3; i++){
 }
 
 console.log(totalPedido);
-
-
-
-// switch (key) {
-//     case value:
-        
-//         break;
-
-//     default:
-//         break;
-// }
-
-// let tipoSandwich = prompt("POR FAVOR ELIJA ENTRE LAS SIGUIENTES OPCIONES PARA LA BÁSE DE SÁNDWICH: pollo --- carne --- veggie"); 
