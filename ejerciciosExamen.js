@@ -81,7 +81,7 @@ nuevoArreglo(15); */
 
 /* Ejercicio 5
 Similar String.split()
-Deberás crear una función llamada split que reciba un string y simule el comportamiento de la función original. Si no estás seguro de cómo funciona, Google puede ayudarte. Importante: no podés usar el String.split(). Ejemplo:
+Deberás crear una función llamada split que reciba un string y simule el comportamiento de la función original. Si no estás seguro de cómo funciona, Importante: no podés usar el String.split(). Ejemplo:
 split(“hola”) debe retornar [“h”,”o”,”l”,”a”]
 split(“chau”) debe retornar [“c”,”h”,”a”,”u”]
  */
@@ -89,16 +89,13 @@ split(“chau”) debe retornar [“c”,”h”,”a”,”u”]
 
 function split(palabra){
     let nuevoArray = [];
-    let stringPalabra=[];
-    stringPalabra.push(palabra)
-    for(i=0; i<=palabra.length; i++){
-        console.log(i);
-        console.log(stringPalabra);
-        nuevoArray.push(stringPalabra[i]);
+    for(i=0; i<palabra.length; i++){
+
+        nuevoArray.push(palabra[i]);
     }
     console.log(nuevoArray);
 }
 
-split("hola");
+split("hola papi");
 
 /* PENDIENTE POR TERMINAR */
