@@ -112,7 +112,7 @@
 
 //   };
 //   console.log(split2("hola"));
-  
+/*   
 function reemplazoFastFast(texto, buscar, reemplazo ){
     let cambio = texto.replace(buscar, reemplazo)
     console.log(cambio)
@@ -137,8 +137,10 @@ let inicioCorte = frase.indexOf("Carli");
 let totalCorte = frase.length
 let licenciada = frase.slice (inicioCorte,totalCorte);
 
+console.log(licenciada) */
 
-console.log(inicioCorte)
-console.log(totalCorte)
-console.log(licenciada)
+
+const matriz=[[1,2],[3,4]]
+
+console.table(matriz)
 
