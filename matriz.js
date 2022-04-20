@@ -48,3 +48,38 @@ for(let i=0; i<matriz2.length; i++){
 console.log (suma)
 
 
+let matricial = [[1,2,3],[4,5,6],[7,8,9]]
+
+console.table(matricial)
+
+
+
+function sumarDiagonal(matriz){
+
+    let sumadiagonalPrincipal = 0;
+    let sumaDiagonalSecundaria = 0;
+
+
+
+    for (let i=0; i<matriz.length; i++){
+        for(let j=0; j<matriz[i].length; j++){
+
+            if(i+j == matriz.length -1){
+                sumaDiagonalSecundaria += matriz[i][j]   
+            }
+
+            if(i == j){
+                sumadiagonalPrincipal += matriz[i][j]
+            }
+        }
+    }
+
+    let array = [sumadiagonalPrincipal, sumaDiagonalSecundaria]
+    return array
+}
+  
+    
+console.log(sumarDiagonal(matricial)) 
+
+
+
