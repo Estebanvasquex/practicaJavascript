@@ -1,6 +1,10 @@
 
 
-const listaFinal = [];
+const todos = [];
+
+const render = () => {
+
+}
 
 window.onload = () => {
 
@@ -9,20 +13,31 @@ form.onsubmit = (e) => {
     e.preventDefault(); /* ESTA FUNCIÓN PREVIENE QUE EL FORMULARIO ACTUALICE O REFRESQUE LA PAGINA SE DEBE PONER COMO PARAMENTRO DE LA FUNCIÓN Y SE ADICIONA EL METODO*/
     const todo = document.getElementById('todo');
     const todoText = todo.value;
-    listaFinal.push(todoText)
+    todos.push(todoText)
     todo.value = '';
-    console.log(listaFinal)
+    console.log(todos)
 
     const todoList = document.getElementById('todo-list');
 
     /*ejercicios realizado con el for*/
-    /*todoList.innerHTML = ' ';
-    for(let i=0; i<listaFinal.length; i++){
-        todoList.innerHTML += '<li>' + listaFinal[i] + '</li>'
-    }*/
+     todoList.innerHTML = ' ';
+    for(let i=0; i<todos.length; i++){
+        todoList.innerHTML += '<li>' + todos[i] + '</li>'
+    }
+    const elementos = document.querySelectorAll('#todo-list li')
+    elementos.forEach((elemento, indice) => {
+        console.log(elemento, indice)
+        console.log("holamundo")
+    })
 
-    const todosTemple = listaFinal.map(t =>'<li>' + t + '<li>');
+
+ 
+ /*    const todosTemple = todos.map(t => '<li>' + t + '<li>');
+    
     todoList.innerHTML = todosTemple.join('');
+    console.log(todosTemple) 
+     */
+    
 
 
     /*ejercicios realizado con metod .map*/
