@@ -141,6 +141,11 @@ console.log(licenciada) */
 
 
 const matriz=[[1,2],[3,4]]
+const nombre = 'Esteban'
 
-console.table(matriz)
+console.table(nombre.toString(36).slice(3))
+const date2 = new Date();
+console.log(date2)
+
+
 
