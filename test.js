@@ -149,3 +149,9 @@ console.log(date2)
 
 
 
+const date1 = new Date();
+const date22 = new Date();
+const difference = date1.getTime() - date22.getTime()
+
+console.log ("fecha22 " + date22)
+console.log ("fecha" + difference)
