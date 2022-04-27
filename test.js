@@ -149,6 +149,7 @@ console.log(date2)
 
 
 
+<<<<<<< HEAD
 let horariosPartida = [12, 14, 18, 21];
 
 let horariosAtrasados = horariosPartida.map(function(numero){
@@ -203,3 +204,11 @@ let prueba = listaDeSuperMercado.forEach(function(i, j){
 })
 
 console.log (prueba)
+=======
+const date1 = new Date();
+const date22 = new Date();
+const difference = date1.getTime() - date22.getTime()
+
+console.log ("fecha22 " + date22)
+console.log ("fecha" + difference)
+>>>>>>> 03792dae213af61f23651215855216e45117414c

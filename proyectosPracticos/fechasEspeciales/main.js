@@ -16,7 +16,7 @@ function addEvent(){
         return;
     }
 
-    if(dataDiff(eventDate.value) < 0 ){ /* SI LA DIFERENCIA DE FECHA DE EVENTO CON FECHA ACTUAL ES NEGATIVA SE FINALIZA LA FUNCIÓN */
+    if(dateDiff(eventDate.value) < 0 ){ /* SI LA DIFERENCIA DE FECHA DE EVENTO CON FECHA ACTUAL ES NEGATIVA SE FINALIZA LA FUNCIÓN */
         return;
     }
 
@@ -30,12 +30,37 @@ function addEvent(){
 
     eventName.value = '';
 
-    renderEvent();
+    renderEvents();
 }
 
 function dateDiff(){  /* REGRESA EL NUMERO DE DÍAS QUE FALTAN DE LA FECHA ACTUAL A LA FECHA DE DESTINO */
-    const date1 = new Date();
-    const date2 = new Date();
+    const targetDate = new Date();
+    const now = new Date();
+    const difference = targetDate.getTime() - now.getTime()
+    const days = Math.ceil(difference /(1000*3600*24)) /* SE PASA UN DÍA A MILISEGUNDO PARA PODERLO HACER LA DIVISIÓN */
+    return days;
+}
+
+function renderEvents(){
+    const eventsHTML = events.map((event =>{
+        return  ` 
+                <div class="event">
+                    <div class="days">
+                        <span class="days-number"> ${dateDiff(event.date)}</span>
+                        <span class="days-text">dias</span>
+                    </div>
+                    <div class="event-name">${event.name}</div>
+                    <div class="event-name">${event.date}</div>
+                    <div class="actions" data-id="${event.id}">
+                        <button class="bDelete">Elimar</button>
+                    </div>
+                </div>
+
+         `
+    }));
+
+    eventsContainer.inerHTML = eventsHTML.join("");
+    
 }
 
 
